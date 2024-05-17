@@ -197,7 +197,7 @@ def start(update, context):
     welcome = f'''
 <b>Hey @{username} 👋
 
-I'm <a herf=\"http://t.me/theimagebot\">@theimagebot</a> 
+I'm <a herf=\"http://t.me/ANONYMOUS_AMIT\">@ANONYMOUS_AMIT</a> 
 
 I Can Do Many Things
 
