@@ -98,7 +98,7 @@ Please Don't Spam 🥺
         draw.text((x, y), text, font=font)
         photo.save('./Watermark/@theimagebot.png')
 
-        caption = "<b>Watermark Added By <a herf=\"http://t.me/theimagebot\">@theimagebot</a></b>❤️"
+        caption = "<b>Watermark Added By ❤️"
         context.bot.send_document(chat_id=update.effective_chat.id,
                                   document=open('./Watermark/@theimagebot.png', 'rb'),
                                   caption=caption, parse_mode="html")
@@ -139,7 +139,7 @@ Please Don't Spam 🥺
         photo = Photo.filter(ImageFilter.GaussianBlur(radius=blur_radious))
         photo.save('./Editing/@theimagebot.png')
 
-        caption = "<b>Blured  By <a herf=\"http://t.me/theimagebot\">@theimagebot</a></b> ❤️"
+        caption = "<b>Blured  By  ❤️"
         context.bot.send_document(chat_id=update.effective_chat.id,
                                   document=open('./Editing/@theimagebot.png', 'rb'),
                                   caption=caption, parse_mode="html")
@@ -182,7 +182,7 @@ Please Don't Spam 🥺
 {fetchUrl}
 
 <b>Reversed By️
-   <a herf=\"http://t.me/theimagebot\">@theimagebot</a></b> ❤
+   <a herf=\"http://t.me/ANONYMOUS_AMIT\">@theimagebot</a></b> ❤
 '''
     context.bot.send_message(chat_id=update.effective_chat.id, text=link, parse_mode='html')
 
@@ -199,9 +199,6 @@ def start(update, context):
 
 I'm <a herf=\"http://t.me/theimagebot\">@theimagebot</a> 
 
-I'm a Open Source Bot 
-/source_code to Get Repo Link 😌
-
 I Can Do Many Things
 
 💫 ➠ I Can Carbonized A Code 
@@ -211,12 +208,6 @@ I Can Do Many Things
 💫 ➠ I Can Blur A Image
 
 Hit /help If You Don't Know How to Use Me 
-
-Developer : <a href=\"t.me/no_one_luv_me\"> ෴ 乂(≧▽≦) 乂 ෴ </a>🧑‍💻
-
-Support Group : <a href=\"https://t.me/ostrichdiscussion\">Ostrich Discussion</a> 🦸‍♂️
-
-Made By <a href=\"https://t.me/theostrich\"> Ostrich </a> ❤️
 
 </b>
 '''
@@ -248,7 +239,7 @@ To Add watermark to an image 🏋️‍♂
 ️
 replay to an image with /addwatermark {text to be watermark}:{watermark size}
 
-example: /addwatermark @ostrichdiscussion:30
+example: /addwatermark @ANONYMOUS_AMIT
 
 To Blur A Image 🚵‍♀️
 
@@ -256,9 +247,7 @@ replay to an image with /blur {blur value}
 
 example: /blur 40
 
-I'm a Open Source Bot 
-/source_code to Get Repo Link 😌
-*
+
     '''
     update.message.reply_text(reply_to_message_id=update.message.message_id, text=help_, parse_mode='markdown')
 
@@ -305,7 +294,7 @@ Please Don't Spam 🥺
     button = driver.find_element_by_xpath("//button[@class='jsx-1730877631 ']")
     button.click()
     time.sleep(5)
-    caption = "<b>Carbonized By <a herf=\"http://t.me/theimagebot\">@theimagebot</a></b>❤️"
+    caption = "❤️"
     context.bot.send_document(chat_id=update.effective_chat.id,
                               document=open('./Carbon/carbon.png', 'rb'),
                               caption=caption, parse_mode="html")
@@ -323,19 +312,6 @@ def source_code(update, context):
     username = update.message.chat.username
     print("Source  : ", username)
     source = '''
-
-Developer : <a href=\"t.me/no_one_luv_me\"> ෴ 乂(≧▽≦) 乂 ෴ </a>🧑‍💻
-    
-Repository Link : https://github.com/NoOneLuvMe/theimagebot
-    
-<b>Give a 🌟 if you liked the repo ❤️</b>
-
-Support Group : <a href=\"https://t.me/ostrichdiscussion\">Ostrich Discussion</a> 🦸‍♂️
-
-Made By <a href=\"https://t.me/theostrich\"> Ostrich </a> ❤️  
-
-
- 
     '''
     update.message.reply_text(reply_to_message_id=update.message.message_id, text=source, parse_mode='html',
                               disable_web_page_preview=True)
